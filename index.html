@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Js Practice</title>
+</head>
+<body>
+        <div class="showAlert" id="showAlert">
+            <p id="alertText">XYZ</p>
+        </div>
+
+    <div class="main">
+
+        <h3>Registration Form</h3>
+
+        <form action="" method="get" onsubmit="validateForm()">
+            <label for="fullName">Full Name</label>
+            <br>
+            <input id="fullName"  type="text" name="" placeholder="" >
+                <br>
+            <label for="username">Username</label>
+            <br>
+            <input id="username" type="text" name="" placeholder="" >
+            <br>
+
+            <label for="emailid">Email</label>
+            <br>
+            <input id="emailid" type="email" name="" placeholder="" >
+            <br>
+
+            <label for="mobno">Mobile Number</label>
+            <br>
+            <input id="mobno" type="text" name="" placeholder="" >
+            <br>
+
+            <label for="pass">Password</label>
+            <br>
+            <input id="pass" type="password" name="" placeholder="" id="">
+            <br>
+            <span toggle="#password-field" onclick="showPassword()" class="fa fa-fw eye-btn fa-eye field-icon toggle-password"></span>
+            <!-- <input type="checkbox" class="checkBtn" onclick="showPassword()" name="" id=""> -->
+            <br>
+
+            <label for="conpass">Confirm Password</label>
+            <br>
+            <input id="conpass" type="password" name="" placeholder="" id="">
+            <br>
+                <br>
+            <input class="submit-btn" onclick="validateForm()" type="submit" value="Register">
+        </form>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
